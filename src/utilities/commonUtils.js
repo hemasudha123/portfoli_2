@@ -21,7 +21,7 @@ export const TOTAL_SCREEN = [
         component: Testimonial,
     },
     {
-        screen_name: "ContactMe",
+        screen_name: "Contact Me",
         component: ContactMe,
     },
 ];

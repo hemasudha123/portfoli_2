@@ -20,10 +20,13 @@ export default function Header() {
     const getHeaderOptions = () => {
         return (
             TOTAL_SCREEN.map((screen, i) => (
-                <div key={screen.screen_name} className={getHeaderOptionsClass(i)}
+
+                <span key={screen.screen_name} className={getHeaderOptionsClass(i)}
                     onClick={() => switchScreen(i, screen)}>
-                    <span>{screen.screen_name}</span>
-                </div>
+                    {screen.screen_name}&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+
+
             ))
         )
     }
